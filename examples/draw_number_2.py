@@ -34,6 +34,7 @@ dmp.imitate_path(y_des=y_des, plot=False)
 y_track, dy_track, ddy_track = dmp.rollout()
 plt.figure(1, figsize=(6, 6))
 
+plt.plot(y_des[0, :], y_des[1, :], "r", lw=2)
 plt.plot(y_track[:, 0], y_track[:, 1], "b", lw=2)
 plt.title("DMP system - draw number 2")
 
